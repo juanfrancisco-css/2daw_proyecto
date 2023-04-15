@@ -11,75 +11,7 @@
     <script src="{{ asset('/js/app2.js') }}"></script>
 </head>
 <body>
-  <!--
-<nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Tienda</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contenido</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mi Cuenta
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#" >Iniciar Sesion</a></li>
-              <li><a class="dropdown-item" href="{{ asset('/register') }}">Crear Cuenta</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Sobre Nosotros</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-success" type="submit">Buscar</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</nav>
--->
-<!--
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Tienda</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href=" {{ route('tienda-home')}}">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Contenido</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Contenido</a>
-        </li>
-       
-      </ul>
-    </div>
-    <a class="navbar-brand btn-login" href="{{ asset('/register') }}">Crear Cuenta</a>
-    <a class="navbar-brand btn-login" href="{{ asset('/login') }}">Iniciar Sesión</a>
-  </div>
-</nav>
--->
+ 
 <div class="container"> 
 @include('layouts.navbars')
 </div>

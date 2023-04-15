@@ -1,0 +1,52 @@
+/******   Como hago para acceder ****\
+
+Una vez descargada la carpeta en el navegador debes de posicionarte con la consola dentro de la carpeta del proyecto y seguir estos pasos :
+
+1) Ejecutar el comando   php artisan serve
+
+2) te generará una ruta parecida a esta ' <http://127.0.0.1:8000>' donde la copias y la pegas en el navegador de tu preferencia
+
+3) Si todo va bien te mostrara la pantalla de inicio del laravel  debes de añadir a esa ruta  /bienvenido
+por ejemplo  
+http://127.0.0.1:8000/bienvenido
+
+y te debera de mostrar un menu donde tienes varias opciones 
+
+
+/*********     Y la Base de Datos    *****\
+
+Te he pasado una base de datos de prueba q he creado para poder dar de alta y validar usuarios
+
+Pero si por alguna razon falla dirigite al fichero .env 
+y editalo 
+///////   MUCHO CUIDADO  \\\\\\\\
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=proyecto_login   // AQUI PONES EL NOMBRE DE LA BASE DE DATOS \\\
+DB_USERNAME=root
+DB_PASSWORD=
+/////
+
+
+
+
+
+/******      Para buscar la ruta de los ficheros .css y .js ******\
+
+!!! ficheros que he creado para personalizar y escribir codigo !! 
+
+1)Los ficheros de diseño estan en 
+public/css/custom.css 
+
+2)Los ficheros de javascript estan en 
+public/js/app2.js
+
+La conexion ya esta establecida a travez del fichero 'app-master.blade.php' que se encuentra en la ruta  resources/views/Layout/app-master.blade.php
+En el se encuentra la estructura basica de la pagina 
+
+/******  MENU DE NAVEGACION *****\
+El menu de navegación se encuentra en resources/views/Layout/navbars.blade.php 
+
+
+
