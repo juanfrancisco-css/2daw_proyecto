@@ -12,9 +12,7 @@
     <script src="{{ asset('js/app2.js') }}"></script>
 </head>
 <body>
-<div class=""> 
 @include('layouts.navbars')
-</div>
 <section>
   <div class="container">
   <h1>Bienvenido a nuestra tienda </h1>
