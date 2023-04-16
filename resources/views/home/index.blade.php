@@ -11,6 +11,9 @@
      <!-- Si es 'name' tiene un valor que sea  nulo muestra lo que se encuentra en la derecha  osea el 'username' -->  
     <h3>Bienvenido {{ auth()->user()->name ?? auth()->user()->username }} a nuestra tienda </h3> 
     <p> <a href="{{ route('tienda-logout') }}">Salir</a> </p>
+
+   
+
     @endauth
 
     <!--Si el usuario entra como invitado sin estar autenticado -->
