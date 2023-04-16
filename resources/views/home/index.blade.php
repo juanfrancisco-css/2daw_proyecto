@@ -19,4 +19,4 @@
         <p> Para saber más debes de  <a href="{{ asset('/login') }}">inicia sesion</a> </p>
     @endguest
 
-    @endsection
+@endsection

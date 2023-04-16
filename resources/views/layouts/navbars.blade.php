@@ -6,7 +6,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-bar">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{ route('tienda-home')}}">Inicio</a>
         </li>
@@ -32,11 +32,17 @@
         <input class="form-control me-2" type="search" placeholder="Que deseas buscar" aria-label="Search">
         <button class="btn btn-outline-success" type="submit"> <i class="bi bi-search"></i></button>
         
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cuenta
+           @auth
+           {{ auth()->user()->name ?? auth()->user()->username }}
+           @endauth
+           @guest
+           Cuenta
+           @endguest
+          
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{ asset('/register') }}">Crear Cuenta</a></li>

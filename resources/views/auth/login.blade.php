@@ -6,6 +6,7 @@
     <h2>Iniciar Sesion </h2>
     <form action="{{ route('tienda-login') }}" method="post">
         @csrf
+        @include('layouts.message')
         <div class="form-floating mb-3" >
           
             <input type="text" name="username" id="Email-Username" class="form-control" placeholder="Usuario/Email">

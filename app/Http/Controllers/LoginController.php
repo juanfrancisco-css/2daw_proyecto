@@ -25,7 +25,7 @@ class LoginController extends Controller
 
          //si no cumple si no  coincide me quedo en la pagina de login
          if(!Auth::validate($credentials)){
-            return redirect()->to('/login')->withErrors('auth.failed');
+            return redirect()->to('/login')->withErrors('Nombre de Usuario o clave incorrectos');
          }
 
          //si son validadas se crea la sesion

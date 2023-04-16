@@ -9,6 +9,7 @@
     <!--Token  me genera un identificar unico con una duracion de dos horas 
          me ayuda para evitar problemas de seguridad -->
     @csrf
+    @include('layouts.message')
     <div class="form-floating mb-3" >
           <input type="text" name="username" class="form-control" placeholder="Nombre de Usuario">
           <label for="Username">Nombre de Usuario</label>

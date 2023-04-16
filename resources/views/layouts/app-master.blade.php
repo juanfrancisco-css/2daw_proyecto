@@ -11,7 +11,7 @@
    <!-- <link rel="StyleSheet" href="{{ url('assets/css/bootstrap.min.css')}}">-->
 </head>
 <body>
-<div class="container"> 
+<div class=""> 
 @include('layouts.navbars')
 </div>
 <main class="container">
