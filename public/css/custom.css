@@ -1,0 +1,45 @@
+
+/**************   Diseño del Formulario de Login (Iniciar Sesion)   ****************/
+.form-login{
+margin-top: 40px;
+width:40%;
+padding: 2%;
+        /* color -left -top difuminado*/
+        /* color +right +bottom  difuminado*/
+box-shadow: black 10px 5px 20px;
+}
+.form-login h2{
+    padding-bottom: 5%;
+}
+.form-login label{
+    font-weight: bolder;
+}
+/**************  Boton de Login (Iniciar Sesion)   ****************/
+.btn-login{
+float:center;
+}
+
+
+
+/**************   Diseño del Formulario de Registro    ****************/
+.form-register{
+    margin-top: 40px;
+    padding: 2%;
+    width:40%;
+      /* color -left -top difuminado*/
+      /* color +right +bottom  difuminado*/
+box-shadow: black 10px 5px 20px;
+}
+.form-register h2{
+    padding-bottom:5%;
+}
+
+
+
+/**************   Diseño del Footer  ****************/
+
+footer{
+    margin-top: 5%;
+    background-color: grey;
+    padding: 5%;
+}

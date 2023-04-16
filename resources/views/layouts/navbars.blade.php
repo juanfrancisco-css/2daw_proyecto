@@ -19,11 +19,19 @@
         <li class="nav-item">
           <a class="nav-link " href="#">Contenido 3</a>
         </li>
+        @auth
+        <li class="nav-item">
+          <a class="nav-link " href="#">Contenido 4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Contenido 5 </a>
+        </li>
+        @endauth
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Que deseas buscar" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-
+        <button class="btn btn-outline-success" type="submit"> <i class="bi bi-search"></i></button>
+        
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
         <li class="nav-item dropdown">
@@ -34,7 +42,12 @@
             <li><a class="dropdown-item" href="{{ asset('/register') }}">Crear Cuenta</a></li>
             <li><a class="dropdown-item" href="{{ asset('/login') }}">Iniciar Sesión</a></li>
             <li><hr class="dropdown-divider"></li>
+            @auth
             <li><a class="dropdown-item" href="{{ route('tienda-logout')}}">Cerrar Sesión</a></li>
+            @endauth
+            @guest
+            <li><a class="dropdown-item disabled" href="{{ route('tienda-logout')}}"  >Cerrar Sesión</a></li>
+            @endguest
           </ul>
         </li>
         
